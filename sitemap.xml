@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
   <loc>Yundog.github.io/</loc>
-  <lastmod>2018-11-16T22:03:07+08:00</lastmod>
+  <lastmod>2018-11-26T00:41:50+08:00</lastmod>
+</url>
+
+<url>
+  <loc>Yundog.github.io/15431555023736.html</loc>
+  <lastmod>2018-11-25T22:18:22+08:00</lastmod>
 </url>
 
 <url>
   <loc>Yundog.github.io/15310244940954.html</loc>
   <lastmod>2018-07-08T12:34:54+08:00</lastmod>
-</url>
-
-<url>
-  <loc>Yundog.github.io/15308094896448.html</loc>
-  <lastmod>2018-07-06T00:51:29+08:00</lastmod>
 </url>
 
 
@@ -23,6 +23,10 @@
 
 <url>
   <loc>Yundog.github.io/markdown.html</loc>
+</url>
+
+<url>
+  <loc>Yundog.github.io/python.html</loc>
 </url>
 
 
