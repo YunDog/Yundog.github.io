@@ -4,13 +4,14 @@
   <title><![CDATA[Yundog]]></title>
   <link href="Yundog.github.io/atom.xml" rel="self"/>
   <link href="Yundog.github.io/"/>
-  <updated>2018-11-16T22:03:07+08:00</updated>
+  <updated>2018-11-26T00:48:23+08:00</updated>
   <id>Yundog.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
-  <generator uri="http://www.mweb.im/">MWeb</generator>
+  <generator uri="http://www.coderforart.com/">CoderForArt</generator>
+
   
   <entry>
     <title type="html"><![CDATA[Linux常用命令及使用方法]]></title>
@@ -22,7 +23,7 @@
 
 <h2 id="toc_0">文件和目录常命令</h2>
 
-<h3 id="toc_1">01 查看目录内容</h3>
+<h3 id="toc_1">1 查看目录内容</h3>
 
 <h4 id="toc_2">1.1 <strong><code>ls</code></strong></h4>
 
@@ -116,7 +117,7 @@
 </tbody>
 </table>
 
-<h3 id="toc_5">03 创建和删除操作</h3>
+<h3 id="toc_5">3 创建和删除操作</h3>
 
 <h4 id="toc_6">3.1 <strong><code>touch</code></strong></h4>
 
@@ -165,7 +166,7 @@
 </tbody>
 </table>
 
-<h3 id="toc_9">04 拷贝和移动文件</h3>
+<h3 id="toc_9">4 拷贝和移动文件</h3>
 
 <h4 id="toc_10">4.1 <strong><code>tree</code></strong></h4>
 
@@ -229,7 +230,7 @@
 </tbody>
 </table>
 
-<h3 id="toc_13">05 查看文件内容</h3>
+<h3 id="toc_13">5 查看文件内容</h3>
 
 <h4 id="toc_14">5.1 <strong><code>cat</code></strong></h4>
 
@@ -333,7 +334,7 @@
 </tbody>
 </table>
 
-<h3 id="toc_17">06 其他</h3>
+<h3 id="toc_17">6 其他</h3>
 
 <h4 id="toc_18">6.1 <strong><code>echo</code></strong></h4>
 

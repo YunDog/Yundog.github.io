@@ -1,117 +1,98 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>
     
   Yundog
   
+
   </title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  
+  <link href="asset/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="atom.xml" rel="alternate" title="Yundog" type="application/atom+xml">
-    <link rel="stylesheet" href="asset/css/foundation.min.css" />
-    <link rel="stylesheet" href="asset/css/docs.css" />
-    <script src="asset/js/vendor/modernizr.js"></script>
-    <script src="asset/js/vendor/jquery.js"></script>
+  <script src="asset/js/modernizr-2.0.js"></script>
+  <script src="asset/js/jquery.min.js"></script>
   <script src="asset/highlightjs/highlight.pack.js"></script>
-  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="asset/highlightjs/styles/solarized_light.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script>hljs.initHighlightingOnLoad();</script>
+
+  <style type="text/css">
+  .cat-children-p{ padding: 6px 0px;}
+  .hljs{background: none;}
+  </style>
+  <script type="text/javascript">
+  var isAddSildbar = true;
+  </script>
+  <script src="asset/js/octopress.js" type="text/javascript"></script>
+</head>
 <script type="text/javascript">
-  function before_search(){
-    var searchVal = 'site:Yundog.github.io ' + document.getElementById('search_input').value;
-    document.getElementById('search_q').value = searchVal;
-    return true;
-  }
+//链接新开窗口
+function addBlankTargetForLinks () {
+  $('a[href^="http"]').each(function(){
+      $(this).attr('target', '_blank');
+  });
+}
+$(document).ready(function(event) {
+  addBlankTargetForLinks();
+});
 </script>
-  </head>
-  <body class="antialiased hide-extras">
-    
-    <div class="marketing off-canvas-wrap" data-offcanvas>
-      <div class="inner-wrap">
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="index.html">Yundog</a></h1>
+  
+    <h2></h2>
+  
+</hgroup>
 
-
-<nav class="top-bar docs-bar hide-for-small" data-topbar>
-
-
-  <section class="top-bar-section">
-  <div class="row">
-      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
-        <ul id="main-menu" class="left">
-        
-        <li id=""><a target="self" href="index.html">Home</a></li>
-        
-        <li id=""><a target="_self" href="archives.html">Archives</a></li>
-        
-        </ul>
-
-        <ul class="right" id="search-wrap">
-          <li>
-<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
-    <input type="hidden" id="search_q" name="q" value="" />
-    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:Yundog.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
 </form>
-</li>
-          </ul>
-      </div></div>
-  </div>
-  </section>
+  
+<ul class="main-navigation">
+
+  <li id=""><a target="self" href="index.html">Home</a></li>
+
+  <li id=""><a target="_self" href="archives.html">Archives</a></li>
+
+</ul>
 
 </nav>
+  <div id="main">
+    <div id="content"> 
+<div class="blog-index">
 
-        <nav class="tab-bar show-for-small">
-  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
-    <span> &nbsp; Yundog</span>
-  </a>
-</nav>
-
-<aside class="left-off-canvas-menu">
-      <ul class="off-canvas-list">
-        
-        <li><a target="self" href="index.html">Home</a></li>
-        
-        <li><a target="_self" href="archives.html">Archives</a></li>
-        
-
-    <li><label>Categories</label></li>
-
-        
-            <li><a href="%E5%AD%A6%E4%B9%A0.html">学习</a></li>
-         
-
-      </ul>
-    </aside>
-
-<a class="exit-off-canvas" href="#"></a>
-
-
-        <section id="main-content" role="main" class="scroll-container">
-        
-       
-
- <script type="text/javascript">
-	$(function(){
-		$('#menu_item_index').addClass('is_active');
-	});
-</script>
-<div class="row">
-	<div class="large-8 medium-8 columns">
-		<div class="markdown-body home-categories">
-		
-			<div class="article">
-                <a class="clearlink" href="15431555023736.html">
-                
-                  <h1>Linux常用命令及使用方法</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>Linux是一款非常不错的操作系统，适合应用在服务器上，谁用谁知道。以下是一些常用的基础命令及用法：</p>
+	<article>
+		 <header>
+		  	<h1 class="entry-title"><a href="15431555023736.html">Linux常用命令及使用方法</a></h1>
+			<p class="meta"><time datetime="2018-11-25T22:18:22+08:00" 
+			pubdate data-updated="true">2018/11/25</time></p>
+		 </header>
+	  	<div class="entry-content">
+		  	
+		  	<p>Linux是一款非常不错的操作系统，适合应用在服务器上，谁用谁知道。以下是一些常用的基础命令及用法：</p>
 
 <h2 id="toc_0">文件和目录常命令</h2>
 
-<h3 id="toc_1">01 查看目录内容</h3>
+<h3 id="toc_1">1 查看目录内容</h3>
 
 <h4 id="toc_2">1.1 <strong><code>ls</code></strong></h4>
 
@@ -205,7 +186,7 @@
 </tbody>
 </table>
 
-<h3 id="toc_5">03 创建和删除操作</h3>
+<h3 id="toc_5">3 创建和删除操作</h3>
 
 <h4 id="toc_6">3.1 <strong><code>touch</code></strong></h4>
 
@@ -254,7 +235,7 @@
 </tbody>
 </table>
 
-<h3 id="toc_9">04 拷贝和移动文件</h3>
+<h3 id="toc_9">4 拷贝和移动文件</h3>
 
 <h4 id="toc_10">4.1 <strong><code>tree</code></strong></h4>
 
@@ -318,7 +299,7 @@
 </tbody>
 </table>
 
-<h3 id="toc_13">05 查看文件内容</h3>
+<h3 id="toc_13">5 查看文件内容</h3>
 
 <h4 id="toc_14">5.1 <strong><code>cat</code></strong></h4>
 
@@ -422,7 +403,7 @@
 </tbody>
 </table>
 
-<h3 id="toc_17">06 其他</h3>
+<h3 id="toc_17">6 其他</h3>
 
 <h4 id="toc_18">6.1 <strong><code>echo</code></strong></h4>
 
@@ -446,38 +427,22 @@
 <li><strong><code>grep</code></strong>：在执行结果的基础上查询指定的文本</li>
 </ul>
 
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2018/11/25</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='python.html'>python</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
 
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15310244940954.html">
-                
-                  <h1>markdown快速入门，重新爱上写作</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>小的时候作文字数要求不少于20字、100字。。。高考不少于800字。。。到现在已经熟练于复制粘贴的我们，会不会特别对不起当初那个好好学习天天向上的小哥哥小姐姐。写作吧！少年！我极力推荐markdown。 </p>
+		</div>
+
+		
+
+	</article>
+ 
+	<article>
+		 <header>
+		  	<h1 class="entry-title"><a href="15310244940954.html">markdown快速入门，重新爱上写作</a></h1>
+			<p class="meta"><time datetime="2018-07-08T12:34:54+08:00" 
+			pubdate data-updated="true">2018/7/8</time></p>
+		 </header>
+	  	<div class="entry-content">
+		  	
+		  	<p>小的时候作文字数要求不少于20字、100字。。。高考不少于800字。。。到现在已经熟练于复制粘贴的我们，会不会特别对不起当初那个好好学习天天向上的小哥哥小姐姐。写作吧！少年！我极力推荐markdown。 </p>
 
 <h2 id="toc_0">什么是markdown</h2>
 
@@ -489,152 +454,75 @@
 
 <p>markdown非常的<strong>任性</strong>，编辑文章全程不！用！鼠！标！特别适合随时随地自由写文章并发表，如博客、生活随笔等等，如果是文件及正式公文，还是老老实实的去用word吧。<br/>
 
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="15310244940954.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2018/7/8</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='markdown.html'>markdown</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
 
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-              
-
-
-			<div class="row">
-			  <div class="large-6 columns">
-			  <p class="text-left" style="padding-top:25px;">
-			   
-			  </p>
-			  </div>
-			  <div class="large-6 columns">
-			<p class="text-right" style="padding-top:25px;">
-			
-			</p>
-			  </div>
-			</div>
 		</div>
-	</div><!-- large 8 -->
 
- <div class="large-4 medium-4 columns">
-  <div class="hide-for-small">
-    <div id="sidebar" class="sidebar">
-          <div id="site-info" class="site-info">
-            
-                <h1>Yundog</h1>
-                <div class="site-des"></div>
-                <div class="social">
+		 
+		 <footer>
+      	<a rel="full-article" href="15310244940954.html#more">read more &rarr;</a>
+    	</footer>
+    	
 
-
-
-
-
-
-
-
-
-
-
-  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
-                
-              	 </div>
-          	</div>
-
-             
-
-              <div id="site-categories" class="side-item ">
-                <div class="side-header">
-                  <h2>Categories</h2>
-                </div>
-                <div class="side-content">
-
-      	<p class="cat-list">
-        
-            <a href="%E5%AD%A6%E4%B9%A0.html"><strong>学习</strong></a>
-         
-        </p>
-
-
-                </div>
-              </div>
-
-              <div id="site-categories" class="side-item">
-                <div class="side-header">
-                  <h2>Recent Posts</h2>
-                </div>
-                <div class="side-content">
-                <ul class="posts-list">
-	      
-		      
-			      <li class="post">
-			        <a href="15431555023736.html">Linux常用命令及使用方法</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15310244940954.html">markdown快速入门，重新爱上写作</a>
-			      </li>
-		     
-		   
-		  		</ul>
-                </div>
-              </div>
-        </div><!-- sidebar -->
-      </div><!-- hide for small -->
-</div><!-- large 4 -->
-
-</div><!-- row -->
-
- <div class="page-bottom clearfix">
-  <div class="row">
-   <p class="copyright">Copyright &copy; 2015
-Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
-Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
-  </div>
+	</article>
+  
+	<div class="pagination">
+	
+<a href="archives.html">Blog Archives</a>
+	 
+	    
+	</div>
 </div>
+ <aside class="sidebar"> 
 
-        </section>
-      </div>
-    </div>
+	<section>
+	  <h1>Categories</h1>
+	  <ul id="recent_posts">
+	  
+	      <li class="post">
+	        <a href="%E5%AD%A6%E4%B9%A0.html"><strong>学习&nbsp;(2)</strong></a>
+	         <p class="cat-children-p"> 
+	        
+	        	<a href="markdown.html">markdown&nbsp;(1)</a>&nbsp;&nbsp;
+	        
+	        	<a href="python.html">python&nbsp;(1)</a>&nbsp;&nbsp;
+	        
+	         </p> 
+	      </li>
+	   
+	  </ul>
+	</section>
+	<section>
+	  <h1>Recent Posts</h1>
+	  <ul id="recent_posts">
+	  
+	      
+		      <li class="post">
+		        <a href="15431555023736.html">Linux常用命令及使用方法</a>
+		      </li>
+	     
+	  
+	      
+		      <li class="post">
+		        <a href="15310244940954.html">markdown快速入门，重新爱上写作</a>
+		      </li>
+	     
+	   
+	  </ul>
+	</section>
+	
+</aside> </div></div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 -  -
+  <span class="credit">Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; Theme by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
 
   
     
 
-    <script src="asset/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-      function fixSidebarHeight(){
-        var w1 = $('.markdown-body').height();
-          var w2 = $('#sidebar').height();
-          if (w1 > w2) { $('#sidebar').height(w1); };
-      }
-      $(function(){
-        fixSidebarHeight();
-      })
-      $(window).load(function(){
-          fixSidebarHeight();
-      });
-     
-    </script>
 
-    
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 
-
-  </body>
+</body>
 </html>
