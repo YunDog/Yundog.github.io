@@ -4,7 +4,7 @@
   <title><![CDATA[Yundog]]></title>
   <link href="Yundog.github.io/atom.xml" rel="self"/>
   <link href="Yundog.github.io/"/>
-  <updated>2018-11-26T00:51:43+08:00</updated>
+  <updated>2018-11-26T00:52:36+08:00</updated>
   <id>Yundog.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -24,7 +24,7 @@
 
 <h3 id="toc_1">1 查看目录内容</h3>
 
-<h4 id="toc_2">1.1 <strong><code>ls</code></strong></h4>
+<h4 id="toc_2">1.1 查看目录<strong><code>ls</code></strong></h4>
 
 <table>
 <thead>
@@ -49,6 +49,8 @@
 </tr>
 </tbody>
 </table>
+
+<span id="more"></span><!-- more -->
 
 <h4 id="toc_3">1.2 ls通配符的使用</h4>
 
@@ -80,7 +82,7 @@
 </tbody>
 </table>
 
-<h3 id="toc_4">02 切换目录</h3>
+<h3 id="toc_4">2 切换目录</h3>
 
 <p>2.1 <strong><code>cd</code></strong></p>
 
@@ -118,14 +120,14 @@
 
 <h3 id="toc_5">3 创建和删除操作</h3>
 
-<h4 id="toc_6">3.1 <strong><code>touch</code></strong></h4>
+<h4 id="toc_6">3.1 创建文件<strong><code>touch</code></strong></h4>
 
 <ul>
 <li>如果文件不存在，生成一个空白文件</li>
 <li>如果文件存在，修改文件的最后一次修改时间</li>
 </ul>
 
-<h4 id="toc_7">3.2 <strong><code>mkdir</code></strong></h4>
+<h4 id="toc_7">3.2 创建目录<strong><code>mkdir</code></strong></h4>
 
 <table>
 <thead>
@@ -143,7 +145,7 @@
 </tbody>
 </table>
 
-<h4 id="toc_8">3.3 <strong><code>rm</code></strong></h4>
+<h4 id="toc_8">3.3 删除<strong><code>rm</code></strong></h4>
 
 <table>
 <thead>
@@ -185,7 +187,7 @@
 </tbody>
 </table>
 
-<h4 id="toc_11">4.2 <strong><code>cp</code></strong></h4>
+<h4 id="toc_11">4.2 拷贝文件<strong><code>cp</code></strong></h4>
 
 <table>
 <thead>
@@ -207,7 +209,7 @@
 </tbody>
 </table>
 
-<h4 id="toc_12">4.3 <strong><code>mv</code></strong></h4>
+<h4 id="toc_12">4.3 移动文件<strong><code>mv</code></strong></h4>
 
 <ul>
 <li><code>mv</code>命令可以用来移动文件或目录，也可以给文件和目录重命名</li>
@@ -231,7 +233,7 @@
 
 <h3 id="toc_13">5 查看文件内容</h3>
 
-<h4 id="toc_14">5.1 <strong><code>cat</code></strong></h4>
+<h4 id="toc_14">5.1 查看文件<strong><code>cat</code></strong></h4>
 
 <table>
 <thead>
@@ -253,7 +255,7 @@
 </tbody>
 </table>
 
-<h4 id="toc_15">5.2 <strong><code>more</code></strong></h4>
+<h4 id="toc_15">5.2分屏显示 <strong><code>more</code></strong></h4>
 
 <ul>
 <li><strong><code>more</code></strong>可以用于分屏显示文件内容，每次只显示一页内容</li>
@@ -295,7 +297,7 @@
 </tbody>
 </table>
 
-<h4 id="toc_16">5.3 <strong><code>grep</code></strong></h4>
+<h4 id="toc_16">5.3 查询<strong><code>grep</code></strong></h4>
 
 <table>
 <thead>
@@ -323,7 +325,7 @@
 <td>含义</td>
 </tr>
 <tr>
-<td>^ a</td>
+<td>^a</td>
 <td>行首，搜索以a开头的行</td>
 </tr>
 <tr>
@@ -335,7 +337,7 @@
 
 <h3 id="toc_17">6 其他</h3>
 
-<h4 id="toc_18">6.1 <strong><code>echo</code></strong></h4>
+<h4 id="toc_18">6.1 显示参数<strong><code>echo</code></strong></h4>
 
 <ul>
 <li>显示指定的文字，通常和重定向联合使用</li>
@@ -356,6 +358,325 @@
 <li><strong><code>more</code></strong>:分屏显示内容</li>
 <li><strong><code>grep</code></strong>：在执行结果的基础上查询指定的文本</li>
 </ul>
+
+<h2 id="toc_21">远程管理常用命令</h2>
+
+<h3 id="toc_22">1 关机重启</h3>
+
+<h4 id="toc_23">1.1 <strong><code>shutdown</code></strong></h4>
+
+<table>
+<thead>
+<tr>
+<th> 选项</th>
+<th>含义</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>不指定</td>
+<td>表示1分钟之后关闭电脑</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>重启</td>
+</tr>
+<tr>
+<td>-r now</td>
+<td>现在重启</td>
+</tr>
+<tr>
+<td>shutdown 19:00</td>
+<td>19:00关机</td>
+</tr>
+<tr>
+<td>shutdown +10</td>
+<td>再过十分钟后关机</td>
+</tr>
+<tr>
+<td>shutdown -c</td>
+<td>取消关机</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="toc_24">2 查看或配置网卡信息</h3>
+
+<h4 id="toc_25">2.1 查看网卡信息 <strong><code>ifconfig</code></strong></h4>
+
+<ul>
+<li>ifconfig | grep inet 查看网卡对应的ip地址</li>
+</ul>
+
+<h4 id="toc_26">2.2 <strong><code>ping</code></strong></h4>
+
+<ul>
+<li>ping ip 和Windows的cmd用法一样</li>
+</ul>
+
+<h3 id="toc_27">3 远程登录和复制文件</h3>
+
+<h4 id="toc_28">3.1 远程登录<strong><code>ssh</code></strong></h4>
+
+<pre><code class="language-text">ssh [-p port] user@remote
+</code></pre>
+
+<ul>
+<li><code>user</code> 远程机器上的用户名</li>
+<li><code>remote</code>远程机器上的地址，域名或ip或别名</li>
+<li><code>port</code> 端口号默认22</li>
+</ul>
+
+<h4 id="toc_29">3.2 远程复制<strong><code>scp</code></strong></h4>
+
+<pre><code class="language-text">scp -P port [源文件] user@remote：绝对路径 [目标文件]
+</code></pre>
+
+<h2 id="toc_30">用户权限相关命令</h2>
+
+<h3 id="toc_31">1 用户管理</h3>
+
+<h4 id="toc_32">1.1 创建用户密码和删除</h4>
+
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>含义</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>useradd -m -g</td>
+<td>创建用户</td>
+<td>-m自动建立用户 -g指定用户所属组</td>
+</tr>
+<tr>
+<td>password 用户名</td>
+<td>设置用户密码</td>
+<td>普通用户可以修改账户密码</td>
+</tr>
+<tr>
+<td>userdel -r</td>
+<td>删除用户</td>
+<td>-r选项会自动删除用户目录</td>
+</tr>
+<tr>
+<td>cat /etc/password | grep 用户名</td>
+<td>确认用户信息</td>
+<td>新建用户后，信息会保存在/etc/password文件中</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="toc_33">1.2 修改拥有者</h4>
+
+<pre><code class="language-text">chown 用户名 文件名|目录名
+</code></pre>
+
+<h4 id="toc_34">1.3 创建组/删除组</h4>
+
+<ul>
+<li>需要通过增加权限<code>sudo</code>来执行</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>含义</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>groupadd 组名</td>
+<td>添加组</td>
+</tr>
+<tr>
+<td>groupdel 组名</td>
+<td>删除组</td>
+</tr>
+<tr>
+<td>cat /etc/group</td>
+<td>确认组信息</td>
+</tr>
+<tr>
+<td>chgrp -R 组名 目录名/文件名</td>
+<td>递归修改所属组</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="toc_35">1.4 修改权限<strong><code>chmod</code></strong></h4>
+
+<pre><code class="language-text">chmod +/-rwx 文件名|目录名
+</code></pre>
+
+<pre><code class="language-text">chmod -R 755 文件名|目录名
+</code></pre>
+
+<h4 id="toc_36">1.5 查看命令所在位置<code>whitch</code></h4>
+
+<pre><code class="language-text">which ls 查看ls命令所在位置
+</code></pre>
+
+<h2 id="toc_37">系统信息相关命令</h2>
+
+<h3 id="toc_38">1  时间和日期</h3>
+
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>含义</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>date</td>
+<td>查看系统时间</td>
+</tr>
+<tr>
+<td>cal</td>
+<td>calendar 查看日历 -y 查看一年的</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="toc_39">2 磁盘信息</h3>
+
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>含义</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>df -h</td>
+<td>disk free显示磁盘剩余空间</td>
+</tr>
+<tr>
+<td>du -h</td>
+<td>disk usage显示目录下的文件大小</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="toc_40">3 进程信息</h3>
+
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>含义</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ps aux</td>
+<td>a显示所有用户进程，u进程详细状态，x没有控制终端的进程</td>
+</tr>
+<tr>
+<td>top</td>
+<td>动态显示运行中的进程并排序</td>
+</tr>
+<tr>
+<td>kill [-9] 进程号</td>
+<td>终止指定代号，-9表示强制终止</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_41">其他命令</h2>
+
+<h3 id="toc_42">1 查找文件<strong><code>find</code></strong></h3>
+
+<pre><code class="language-text">find [路径] -name “关键字”
+</code></pre>
+
+<h3 id="toc_43">2 软链接和硬链接<strong><code>ln</code></strong></h3>
+
+<pre><code class="language-text">ln [-s] 源文件 链接文件
+</code></pre>
+
+<p>没有-s相当于windows的快捷方式<br/>
+有-s是一个硬链接，两个文件占用相同的空间</p>
+
+<h3 id="toc_44">3 打包/压缩<strong><code>tar</code></strong></h3>
+
+<h4 id="toc_45">3.1 打包</h4>
+
+<pre><code class="language-text">tar -cvf 打包文件名.tar 被打包的文件 /路径
+</code></pre>
+
+<p>打包+压缩</p>
+
+<pre><code class="language-text">tar -zcvf 打包文件名.tar 被打包并压缩的文件 /路径
+</code></pre>
+
+<h4 id="toc_46">3.2 解包</h4>
+
+<pre><code class="language-text">tar -xvf 打包文件名.tar
+</code></pre>
+
+<p>解包+压缩</p>
+
+<pre><code class="language-text">tar -zxvf 打包文件名.tar.gz -C 路径
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>含义</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>c</td>
+<td>生成档案文件，创建打包文件</td>
+</tr>
+<tr>
+<td>x</td>
+<td>解开档案文件</td>
+</tr>
+<tr>
+<td>v</td>
+<td>列出归档解档的详细过程，显示进度</td>
+</tr>
+<tr>
+<td>f</td>
+<td>指定档案文件名称，必须放最后</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="toc_47">4 软件安装更新及卸载<strong><code>apt</code></strong></h3>
+
+<p>安装</p>
+
+<pre><code class="language-text">sudo apt install 软件包
+</code></pre>
+
+<p>卸载</p>
+
+<pre><code class="language-text">sudo apt remove 软件名
+</code></pre>
+
+<p>更新</p>
+
+<pre><code class="language-text">sudo apt upgrade
+</code></pre>
 
 ]]></content>
   </entry>

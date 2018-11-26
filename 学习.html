@@ -113,7 +113,7 @@
 
 <h3 id="toc_1">1 查看目录内容</h3>
 
-<h4 id="toc_2">1.1 <strong><code>ls</code></strong></h4>
+<h4 id="toc_2">1.1 查看目录<strong><code>ls</code></strong></h4>
 
 <table>
 <thead>
@@ -139,312 +139,6 @@
 </tbody>
 </table>
 
-<h4 id="toc_3">1.2 ls通配符的使用</h4>
-
-<table>
-<thead>
-<tr>
-<th>通配符</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>*</td>
-<td>代表任意个数个字符</td>
-</tr>
-<tr>
-<td>？</td>
-<td>代表任意一个字符，至少1个</td>
-</tr>
-<tr>
-<td>[]</td>
-<td>表示可以匹配字符组中的任一以</td>
-</tr>
-<tr>
-<td>[abc]</td>
-<td>匹配a、b、c中的任意一个</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="toc_4">02 切换目录</h3>
-
-<p>2.1 <strong><code>cd</code></strong></p>
-
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>cd</td>
-<td>切换到当前用户的主目录</td>
-</tr>
-<tr>
-<td>cd ~</td>
-<td>切换到当前用户的主目录</td>
-</tr>
-<tr>
-<td>cd .</td>
-<td>保持在当前目录不变</td>
-</tr>
-<tr>
-<td>cd ..</td>
-<td>切换到上级目录</td>
-</tr>
-<tr>
-<td>cd -</td>
-<td>可以在最近两次工作目录之间来回切换</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="toc_5">3 创建和删除操作</h3>
-
-<h4 id="toc_6">3.1 <strong><code>touch</code></strong></h4>
-
-<ul>
-<li>如果文件不存在，生成一个空白文件</li>
-<li>如果文件存在，修改文件的最后一次修改时间</li>
-</ul>
-
-<h4 id="toc_7">3.2 <strong><code>mkdir</code></strong></h4>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>-p</td>
-<td>可以递归创建目录</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="toc_8">3.3 <strong><code>rm</code></strong></h4>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>-f</td>
-<td>强制删除，忽略不存在的文件，无需提示</td>
-</tr>
-<tr>
-<td>-r</td>
-<td>递归地删除目录下的内容，删除文件夹时必须使用此参数</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="toc_9">4 拷贝和移动文件</h3>
-
-<h4 id="toc_10">4.1 <strong><code>tree</code></strong></h4>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>-d</td>
-<td>只显示目录</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="toc_11">4.2 <strong><code>cp</code></strong></h4>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>-i</td>
-<td>覆盖文件前提示</td>
-</tr>
-<tr>
-<td>-r</td>
-<td>若给出的源文件是目录，则cp将递归复制该目录下的所有目录和文件，目标文件必须为一个目录名</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="toc_12">4.3 <strong><code>mv</code></strong></h4>
-
-<ul>
-<li><code>mv</code>命令可以用来移动文件或目录，也可以给文件和目录重命名</li>
-</ul>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>-i</td>
-<td>覆盖文件前提示</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="toc_13">5 查看文件内容</h3>
-
-<h4 id="toc_14">5.1 <strong><code>cat</code></strong></h4>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>-b</td>
-<td>对非空输出行编号</td>
-</tr>
-<tr>
-<td>-n</td>
-<td>对输出的所有行编号</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="toc_15">5.2 <strong><code>more</code></strong></h4>
-
-<ul>
-<li><strong><code>more</code></strong>可以用于分屏显示文件内容，每次只显示一页内容</li>
-</ul>
-
-<table>
-<thead>
-<tr>
-<th>操作键</th>
-<th>功能</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>空格键</td>
-<td>显示手册页的下一屏</td>
-</tr>
-<tr>
-<td>enter键</td>
-<td>一次滚动一页</td>
-</tr>
-<tr>
-<td>b</td>
-<td>回滚一屏</td>
-</tr>
-<tr>
-<td>f</td>
-<td>前滚一屏</td>
-</tr>
-<tr>
-<td>q</td>
-<td>退出</td>
-</tr>
-<tr>
-<td>/word</td>
-<td>搜索word字符</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="toc_16">5.3 <strong><code>grep</code></strong></h4>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>-n</td>
-<td>显示匹配行及行号</td>
-</tr>
-<tr>
-<td>-v</td>
-<td>显示不包含匹配文本的所有行</td>
-</tr>
-<tr>
-<td>-i</td>
-<td>忽略大小写</td>
-</tr>
-<tr>
-<td>参数</td>
-<td>含义</td>
-</tr>
-<tr>
-<td>^ a</td>
-<td>行首，搜索以a开头的行</td>
-</tr>
-<tr>
-<td>a$</td>
-<td>行尾，搜索以ke结束的行</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="toc_17">6 其他</h3>
-
-<h4 id="toc_18">6.1 <strong><code>echo</code></strong></h4>
-
-<ul>
-<li>显示指定的文字，通常和重定向联合使用</li>
-</ul>
-
-<h4 id="toc_19">6.2 重定向 &gt;和&gt;&gt;</h4>
-
-<ul>
-<li>将命令执行结果重定向到一个文件</li>
-<li>将本应显示在终端上的内容输出/追加到指定文件中</li>
-</ul>
-
-<h4 id="toc_20">6.3管道 |</h4>
-
-<ul>
-<li>将一个人命令的输出可以通过管道作为另一个命令的输入<br/>
-常用的管道命令有：</li>
-<li><strong><code>more</code></strong>:分屏显示内容</li>
-<li><strong><code>grep</code></strong>：在执行结果的基础上查询指定的文本</li>
-</ul>
 
                         
                       </div>
@@ -452,11 +146,11 @@
                 </a>
                 <div class="read-more clearfix">
                   <div class="more-left left">
-                  
+                   <a href="15431555023736.html">Read more</a>&nbsp;&nbsp; 
                     <span class="date">2018/11/25</span>
                     <span>posted in&nbsp;</span> 
           				  
-          					    <span class="posted-in"><a href='python.html'>python</a></span>
+          					    <span class="posted-in"><a href='%E5%AD%A6%E4%B9%A0.html'>学习</a></span>
           				   
                   </div>
                   <div class="more-right right">
@@ -499,7 +193,7 @@
                     <span class="date">2018/7/8</span>
                     <span>posted in&nbsp;</span> 
           				  
-          					    <span class="posted-in"><a href='markdown.html'>markdown</a></span>
+          					    <span class="posted-in"><a href='%E5%AD%A6%E4%B9%A0.html'>学习</a></span>
           				   
                   </div>
                   <div class="more-right right">
