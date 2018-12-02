@@ -1,24 +1,126 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-
-  <title><![CDATA[Yundog]]></title>
-  <link href="Yundog.github.io/atom.xml" rel="self"/>
-  <link href="Yundog.github.io/"/>
-  <updated>2018-11-26T23:13:11+08:00</updated>
-  <id>Yundog.github.io/</id>
-  <author>
-    <name><![CDATA[]]></name>
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
     
-  </author>
-  <generator uri="http://www.mweb.im/">MWeb</generator>
+  # `vi` 编辑器之神（学习笔记） - Yundog
   
-  <entry>
-    <title type="html"><![CDATA[# `vi` 编辑器之神（学习笔记）]]></title>
-    <link href="Yundog.github.io/15437629319226.html"/>
-    <updated>2018-12-02T23:02:11+08:00</updated>
-    <id>Yundog.github.io/15437629319226.html</id>
-    <content type="html"><![CDATA[
-<h2 id="toc_0">01. <code>vi</code> 简介</h2>
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="Yundog" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:Yundog.github.io ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id=""><a target="self" href="index.html">Home</a></li>
+        
+        <li id=""><a target="_self" href="archives.html">Archives</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; Yundog</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="%E5%AD%A6%E4%B9%A0.html">学习</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1># `vi` 编辑器之神（学习笔记）</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2018/12/2</span>
+
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='Linux.html'>Linux</a></span>
+           
+         
+          <span class="comments">
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <h2 id="toc_0">01. <code>vi</code> 简介</h2>
 
 <h3 id="toc_1">1.1 学习 <code>vi</code> 的目的</h3>
 
@@ -1165,817 +1267,152 @@ $ ls -l /usr/bin/vim.basic
 <li>网上有很多高手已经配置好的针对 <code>python</code> 开发的 <code>vimrc</code> 文件，可以下载过来直接使用，或者等大家多 <code>Linux</code> 比较熟悉后，再行学习！</li>
 </ul>
 
-]]></content>
-  </entry>
+
+    
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="15431555023736.html" 
+          title="Next Post: Linux常用命令及使用方法">Linux常用命令及使用方法 &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <h1>Yundog</h1>
+                <div class="site-des"></div>
+                <div class="social">
+
+
+
+
+
+
+
+
+
+
+
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
+                
+              	 </div>
+          	</div>
+
+             
+
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Categories</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="%E5%AD%A6%E4%B9%A0.html"><strong>学习</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>Recent Posts</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="15437629319226.html"># `vi` 编辑器之神（学习笔记）</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15431555023736.html">Linux常用命令及使用方法</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15310244940954.html">markdown快速入门，重新爱上写作</a>
+			      </li>
+		     
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
   
-  <entry>
-    <title type="html"><![CDATA[Linux常用命令及使用方法]]></title>
-    <link href="Yundog.github.io/15431555023736.html"/>
-    <updated>2018-11-25T22:18:22+08:00</updated>
-    <id>Yundog.github.io/15431555023736.html</id>
-    <content type="html"><![CDATA[
-<p>Linux是一种非常不错的操作系统，尤其是应用在服务器方面。以下是一些常用的基础命令及用法：</p>
-
-<h2 id="toc_0">文件和目录常命令</h2>
-
-<h3 id="toc_1">1 查看目录内容</h3>
-
-<h4 id="toc_2">1.1 查看目录<strong><code>ls</code></strong></h4>
-
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>-a</td>
-<td>显示指定目录下所有的目录及文件，包括隐藏文件</td>
-</tr>
-<tr>
-<td>-l</td>
-<td>以列表方式显示文件的详细信息</td>
-</tr>
-<tr>
-<td>-h</td>
-<td>配合-l以人性化的方式显示</td>
-</tr>
-</tbody>
-</table>
-
-<span id="more"></span><!-- more -->
-
-<h4 id="toc_3">1.2 ls通配符的使用</h4>
-
-<table>
-<thead>
-<tr>
-<th>通配符</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>*</td>
-<td>代表任意个数个字符</td>
-</tr>
-<tr>
-<td>？</td>
-<td>代表任意一个字符，至少1个</td>
-</tr>
-<tr>
-<td>[]</td>
-<td>表示可以匹配字符组中的任一以</td>
-</tr>
-<tr>
-<td>[abc]</td>
-<td>匹配a、b、c中的任意一个</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="toc_4">2 切换目录</h3>
-
-<p>2.1 <strong><code>cd</code></strong></p>
-
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>cd</td>
-<td>切换到当前用户的主目录</td>
-</tr>
-<tr>
-<td>cd ~</td>
-<td>切换到当前用户的主目录</td>
-</tr>
-<tr>
-<td>cd .</td>
-<td>保持在当前目录不变</td>
-</tr>
-<tr>
-<td>cd ..</td>
-<td>切换到上级目录</td>
-</tr>
-<tr>
-<td>cd -</td>
-<td>可以在最近两次工作目录之间来回切换</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="toc_5">3 创建和删除操作</h3>
-
-<h4 id="toc_6">3.1 创建文件<strong><code>touch</code></strong></h4>
-
-<ul>
-<li>如果文件不存在，生成一个空白文件</li>
-<li>如果文件存在，修改文件的最后一次修改时间</li>
-</ul>
-
-<h4 id="toc_7">3.2 创建目录<strong><code>mkdir</code></strong></h4>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>-p</td>
-<td>可以递归创建目录</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="toc_8">3.3 删除<strong><code>rm</code></strong></h4>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>-f</td>
-<td>强制删除，忽略不存在的文件，无需提示</td>
-</tr>
-<tr>
-<td>-r</td>
-<td>递归地删除目录下的内容，删除文件夹时必须使用此参数</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="toc_9">4 拷贝和移动文件</h3>
-
-<h4 id="toc_10">4.1 <strong><code>tree</code></strong></h4>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>-d</td>
-<td>只显示目录</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="toc_11">4.2 拷贝文件<strong><code>cp</code></strong></h4>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>-i</td>
-<td>覆盖文件前提示</td>
-</tr>
-<tr>
-<td>-r</td>
-<td>若给出的源文件是目录，则cp将递归复制该目录下的所有目录和文件，目标文件必须为一个目录名</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="toc_12">4.3 移动文件<strong><code>mv</code></strong></h4>
-
-<ul>
-<li><code>mv</code>命令可以用来移动文件或目录，也可以给文件和目录重命名</li>
-</ul>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>-i</td>
-<td>覆盖文件前提示</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="toc_13">5 查看文件内容</h3>
-
-<h4 id="toc_14">5.1 查看文件<strong><code>cat</code></strong></h4>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>-b</td>
-<td>对非空输出行编号</td>
-</tr>
-<tr>
-<td>-n</td>
-<td>对输出的所有行编号</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="toc_15">5.2分屏显示 <strong><code>more</code></strong></h4>
-
-<ul>
-<li><strong><code>more</code></strong>可以用于分屏显示文件内容，每次只显示一页内容</li>
-</ul>
-
-<table>
-<thead>
-<tr>
-<th>操作键</th>
-<th>功能</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>空格键</td>
-<td>显示手册页的下一屏</td>
-</tr>
-<tr>
-<td>enter键</td>
-<td>一次滚动一页</td>
-</tr>
-<tr>
-<td>b</td>
-<td>回滚一屏</td>
-</tr>
-<tr>
-<td>f</td>
-<td>前滚一屏</td>
-</tr>
-<tr>
-<td>q</td>
-<td>退出</td>
-</tr>
-<tr>
-<td>/word</td>
-<td>搜索word字符</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="toc_16">5.3 查询<strong><code>grep</code></strong></h4>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>-n</td>
-<td>显示匹配行及行号</td>
-</tr>
-<tr>
-<td>-v</td>
-<td>显示不包含匹配文本的所有行</td>
-</tr>
-<tr>
-<td>-i</td>
-<td>忽略大小写</td>
-</tr>
-<tr>
-<td>参数</td>
-<td>含义</td>
-</tr>
-<tr>
-<td>^a</td>
-<td>行首，搜索以a开头的行</td>
-</tr>
-<tr>
-<td>a$</td>
-<td>行尾，搜索以ke结束的行</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="toc_17">6 其他</h3>
-
-<h4 id="toc_18">6.1 显示参数<strong><code>echo</code></strong></h4>
-
-<ul>
-<li>显示指定的文字，通常和重定向联合使用</li>
-</ul>
-
-<h4 id="toc_19">6.2 重定向 &gt;和&gt;&gt;</h4>
-
-<ul>
-<li>将命令执行结果重定向到一个文件</li>
-<li>将本应显示在终端上的内容输出/追加到指定文件中</li>
-</ul>
-
-<h4 id="toc_20">6.3管道 |</h4>
-
-<ul>
-<li>将一个人命令的输出可以通过管道作为另一个命令的输入<br/>
-常用的管道命令有：</li>
-<li><strong><code>more</code></strong>:分屏显示内容</li>
-<li><strong><code>grep</code></strong>：在执行结果的基础上查询指定的文本</li>
-</ul>
-
-<h2 id="toc_21">远程管理常用命令</h2>
-
-<h3 id="toc_22">1 关机重启</h3>
-
-<h4 id="toc_23">1.1 <strong><code>shutdown</code></strong></h4>
-
-<table>
-<thead>
-<tr>
-<th> 选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>不指定</td>
-<td>表示1分钟之后关闭电脑</td>
-</tr>
-<tr>
-<td>-r</td>
-<td>重启</td>
-</tr>
-<tr>
-<td>-r now</td>
-<td>现在重启</td>
-</tr>
-<tr>
-<td>shutdown 19:00</td>
-<td>19:00关机</td>
-</tr>
-<tr>
-<td>shutdown +10</td>
-<td>再过十分钟后关机</td>
-</tr>
-<tr>
-<td>shutdown -c</td>
-<td>取消关机</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="toc_24">2 查看或配置网卡信息</h3>
-
-<h4 id="toc_25">2.1 查看网卡信息 <strong><code>ifconfig</code></strong></h4>
-
-<ul>
-<li>ifconfig | grep inet 查看网卡对应的ip地址</li>
-</ul>
-
-<h4 id="toc_26">2.2 <strong><code>ping</code></strong></h4>
-
-<ul>
-<li>ping ip 和Windows的cmd用法一样</li>
-</ul>
-
-<h3 id="toc_27">3 远程登录和复制文件</h3>
-
-<h4 id="toc_28">3.1 远程登录<strong><code>ssh</code></strong></h4>
-
-<pre><code class="language-text">ssh [-p port] user@remote
-</code></pre>
-
-<ul>
-<li><code>user</code> 远程机器上的用户名</li>
-<li><code>remote</code>远程机器上的地址，域名或ip或别名</li>
-<li><code>port</code> 端口号默认22</li>
-</ul>
-
-<h4 id="toc_29">3.2 远程复制<strong><code>scp</code></strong></h4>
-
-<pre><code class="language-text">scp -P port [源文件] user@remote：绝对路径 [目标文件]
-</code></pre>
-
-<h2 id="toc_30">用户权限相关命令</h2>
-
-<h3 id="toc_31">1 用户管理</h3>
-
-<h4 id="toc_32">1.1 创建用户密码和删除</h4>
-
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>含义</th>
-<th>说明</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>useradd -m -g</td>
-<td>创建用户</td>
-<td>-m自动建立用户 -g指定用户所属组</td>
-</tr>
-<tr>
-<td>password 用户名</td>
-<td>设置用户密码</td>
-<td>普通用户可以修改账户密码</td>
-</tr>
-<tr>
-<td>userdel -r</td>
-<td>删除用户</td>
-<td>-r选项会自动删除用户目录</td>
-</tr>
-<tr>
-<td>cat /etc/password | grep 用户名</td>
-<td>确认用户信息</td>
-<td>新建用户后，信息会保存在/etc/password文件中</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="toc_33">1.2 修改拥有者</h4>
-
-<pre><code class="language-text">chown 用户名 文件名|目录名
-</code></pre>
-
-<h4 id="toc_34">1.3 创建组/删除组</h4>
-
-<ul>
-<li>需要通过增加权限<code>sudo</code>来执行</li>
-</ul>
-
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>groupadd 组名</td>
-<td>添加组</td>
-</tr>
-<tr>
-<td>groupdel 组名</td>
-<td>删除组</td>
-</tr>
-<tr>
-<td>cat /etc/group</td>
-<td>确认组信息</td>
-</tr>
-<tr>
-<td>chgrp -R 组名 目录名/文件名</td>
-<td>递归修改所属组</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="toc_35">1.4 修改权限<strong><code>chmod</code></strong></h4>
-
-<pre><code class="language-text">chmod +/-rwx 文件名|目录名
-</code></pre>
-
-<pre><code class="language-text">chmod -R 755 文件名|目录名
-</code></pre>
-
-<h4 id="toc_36">1.5 查看命令所在位置<code>whitch</code></h4>
-
-<pre><code class="language-text">which ls 查看ls命令所在位置
-</code></pre>
-
-<h2 id="toc_37">系统信息相关命令</h2>
-
-<h3 id="toc_38">1  时间和日期</h3>
-
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>date</td>
-<td>查看系统时间</td>
-</tr>
-<tr>
-<td>cal</td>
-<td>calendar 查看日历 -y 查看一年的</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="toc_39">2 磁盘信息</h3>
-
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>df -h</td>
-<td>disk free显示磁盘剩余空间</td>
-</tr>
-<tr>
-<td>du -h</td>
-<td>disk usage显示目录下的文件大小</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="toc_40">3 进程信息</h3>
-
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>ps aux</td>
-<td>a显示所有用户进程，u进程详细状态，x没有控制终端的进程</td>
-</tr>
-<tr>
-<td>top</td>
-<td>动态显示运行中的进程并排序</td>
-</tr>
-<tr>
-<td>kill [-9] 进程号</td>
-<td>终止指定代号，-9表示强制终止</td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="toc_41">其他命令</h2>
-
-<h3 id="toc_42">1 查找文件<strong><code>find</code></strong></h3>
-
-<pre><code class="language-text">find [路径] -name “关键字”
-</code></pre>
-
-<h3 id="toc_43">2 软链接和硬链接<strong><code>ln</code></strong></h3>
-
-<pre><code class="language-text">ln [-s] 源文件 链接文件
-</code></pre>
-
-<p>没有-s相当于windows的快捷方式<br/>
-有-s是一个硬链接，两个文件占用相同的空间</p>
-
-<h3 id="toc_44">3 打包/压缩<strong><code>tar</code></strong></h3>
-
-<h4 id="toc_45">3.1 打包</h4>
-
-<pre><code class="language-text">tar -cvf 打包文件名.tar 被打包的文件 /路径
-</code></pre>
-
-<p>打包+压缩</p>
-
-<pre><code class="language-text">tar -zcvf 打包文件名.tar 被打包并压缩的文件 /路径
-</code></pre>
-
-<h4 id="toc_46">3.2 解包</h4>
-
-<pre><code class="language-text">tar -xvf 打包文件名.tar
-</code></pre>
-
-<p>解包+压缩</p>
-
-<pre><code class="language-text">tar -zxvf 打包文件名.tar.gz -C 路径
-</code></pre>
-
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>c</td>
-<td>生成档案文件，创建打包文件</td>
-</tr>
-<tr>
-<td>x</td>
-<td>解开档案文件</td>
-</tr>
-<tr>
-<td>v</td>
-<td>列出归档解档的详细过程，显示进度</td>
-</tr>
-<tr>
-<td>f</td>
-<td>指定档案文件名称，必须放最后</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="toc_47">4 软件安装更新及卸载<strong><code>apt</code></strong></h3>
-
-<p>安装</p>
-
-<pre><code class="language-text">sudo apt install 软件包
-</code></pre>
-
-<p>卸载</p>
-
-<pre><code class="language-text">sudo apt remove 软件名
-</code></pre>
-
-<p>更新</p>
-
-<pre><code class="language-text">sudo apt upgrade
-</code></pre>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[markdown快速入门，重新爱上写作]]></title>
-    <link href="Yundog.github.io/15310244940954.html"/>
-    <updated>2018-07-08T12:34:54+08:00</updated>
-    <id>Yundog.github.io/15310244940954.html</id>
-    <content type="html"><![CDATA[
-<p>小的时候作文字数要求不少于20字、100字。。。高考不少于800字。。。到现在已经熟练于复制粘贴的我们，会不会特别对不起当初那个好好学习天天向上的小哥哥小姐姐。写作吧！少年！我极力推荐markdown。 </p>
-
-<h2 id="toc_0">什么是markdown</h2>
-
-<ul>
-<li>markdown简单来说，是一种文本标记语言</li>
-<li>配合上markdown编辑工具，就成为了一款写作神器</li>
-<li>目前支持markdown的有GitHub（号称对穷人最大的恩赐）、简书、有道笔记等众多平台。</li>
-</ul>
-
-<p>markdown非常的<strong>任性</strong>，编辑文章全程不！用！鼠！标！特别适合随时随地自由写文章并发表，如博客、生活随笔等等，如果是文件及正式公文，还是老老实实的去用word吧。<br/>
-<span id="more"></span><!-- more --></p>
-
-<h2 id="toc_1">markdown编辑器</h2>
-
-<p>markdown编辑器有很多，有免费的有收费的，各有千秋，选适合自己的就好。我使用的是最近发布的<a href="https://zh.mweb.im/index.html">Mweb3</a> (为什么？因为qiong，这款app首周上市打半折)。<br/>
-也可以参考以下2篇博文或者去度娘来选择：<br/>
-+<a href="https://www.jianshu.com/p/d4e331770e60">好用的Markdown编辑器一览</a><br/>
-+<a href="https://blog.csdn.net/bat67/article/details/72804251">整理：几款好用的Markdown编辑器</a></p>
-
-<h2 id="toc_2">markdown常用语法</h2>
-
-<h3 id="toc_3">标题用法</h3>
-
-<hr/>
-
-<p><code>#+标题</code>（<em>注意#号数量</em>）</p>
-
-<pre><code class="language-text">#这是一级标题#
-##这是二级标题##
-###这是三级标题###
-######这是六级标题######
-</code></pre>
-
-<p>下面是实际效果：</p>
-
-<h1 id="toc_4">一级标题</h1>
-
-<h2 id="toc_5">二级标题</h2>
-
-<h3 id="toc_6">三级标题</h3>
-
-<h6 id="toc_7">六级标题</h6>
-
-<h3 id="toc_8">列表</h3>
-
-<hr/>
-
-<h4 id="toc_9">无序列表</h4>
-
-<p><code>*+ +文字</code> （<em>注意空格</em>）</p>
-
-<pre><code class="language-text">* 项目一
-* 项目二
-</code></pre>
-
-<ul>
-<li>项目一</li>
-<li>项目二</li>
-</ul>
-
-<h4 id="toc_10">有序列表</h4>
-
-<p><code>数字 + . + 空格键</code></p>
-
-<pre><code class="language-text">1. 项目一  
-2. 项目二 
-3. 项目三
-</code></pre>
-
-<ol>
-<li>项目一<br/></li>
-<li>项目二 </li>
-<li>项目三</li>
-</ol>
-
-<h3 id="toc_11">换行</h3>
-
-<hr/>
-
-<p>换行<br/>
-四个及以上空格加回车。<br/>
-如果不想打这么多空格，有的编辑器是支持直接回车的。</p>
-
-<h3 id="toc_12">字体效果</h3>
-
-<hr/>
-
-<pre><code class="language-text">**加粗**
- *斜体*
-</code></pre>
-
-<p><strong>加粗</strong><br/>
- <em>斜体</em></p>
-
-<h3 id="toc_13">分割线</h3>
-
-<hr/>
-
-<p>以下方式生成分割线 <br/>
-<code>***</code><br/>
-效果如下：</p>
-
-<hr/>
-
-<h3 id="toc_14">引用链接</h3>
-
-<hr/>
-
-<pre><code class="language-text">email &lt;example@example.com&gt;
-[GitHub](http://github.com)
-自动生成连接  &lt;http://www.github.com/&gt;
-</code></pre>
-
-<p>email <a href="mailto:example@example.com">example@example.com</a><br/>
-<a href="http://github.com">GitHub</a><br/>
-自动生成连接  <a href="http://www.github.com/">http://www.github.com/</a></p>
-
-<h3 id="toc_15">插入图片</h3>
-
-<hr/>
-
-<p>以下面的图片为例子，左对齐为 -l340，居中为 -c340，居右为 -r340，340为宽度。</p>
-
-<pre><code class="language-text">![图片描述-c340](http://yundog.top/wp-content/uploads/2018/07/WechatIMG3.jpeg)
-</code></pre>
-
-<p>实际效果：<br/>
-<img src="http://yundog.top/wp-content/uploads/2018/07/WechatIMG3.jpeg" alt="图片描述" class="mw_img_center" style="width:340px;display: block; clear:both; margin: 0 auto;"/></p>
-
-<p>除了上述之外，markdown还有很多语法，然而学会以上几条，就能写一些基本文章了。要深度使用，可以去<a href="http://www.markdown.cn">markdown官方教程</a>看看。</p>
-
-]]></content>
-  </entry>
-  
-</feed>
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+    
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
+
+
+  </body>
+</html>
