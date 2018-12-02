@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  # `vi` 编辑器之神（学习笔记） - Yundog
+   - Yundog
   
   </title>
   
@@ -100,7 +100,7 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1># `vi` 编辑器之神（学习笔记）</h1>
+          <h1></h1>
      
         <div class="read-more clearfix">
           <span class="date">2018/12/2</span>
@@ -120,9 +120,11 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <h2 id="toc_0">01. <code>vi</code> 简介</h2>
+      <h1 id="toc_0">编辑器之神<code>vi</code>学习笔记</h1>
 
-<h3 id="toc_1">1.1 学习 <code>vi</code> 的目的</h3>
+<h2 id="toc_1">01. <code>vi</code> 简介</h2>
+
+<h3 id="toc_2">1.1 学习 <code>vi</code> 的目的</h3>
 
 <ul>
 <li>在工作中，要对 <strong>服务器</strong> 上的文件进行 <strong>简单</strong> 的修改，可以使用 <code>ssh</code> 远程登录到服务器上，并且使用 <code>vi</code> 进行快速的编辑即可</li>
@@ -146,7 +148,7 @@
 <li>在很多 <code>Linux</code> 发行版中，直接把 <code>vi</code> 做成 <code>vim</code> 的软连接</li>
 </ul>
 
-<h4 id="toc_2">vi</h4>
+<h4 id="toc_3">vi</h4>
 
 <ul>
 <li><code>vi</code> 是 <code>Visual interface</code> 的简称，是 <code>Linux</code> 中 <strong>最经典</strong> 的文本编辑器</li>
@@ -162,7 +164,7 @@
 <li><p><code>vi</code> 编辑器在 <strong>系统管理</strong>、<strong>服务器管理</strong> 编辑文件时，<strong>其功能永远不是图形界面的编辑器能比拟的</strong></p></li>
 </ul>
 
-<h4 id="toc_3"><code>vim</code></h4>
+<h4 id="toc_4"><code>vim</code></h4>
 
 <p><strong>vim = vi improved</strong></p>
 
@@ -170,7 +172,7 @@
 <li><code>vim</code> 是从 <code>vi</code> 发展出来的一个文本编辑器，支持 <strong>代码补全</strong>、<strong>编译</strong> 及 <strong>错误跳转</strong> 等方便编程的功能特别丰富，在程序员中被广泛使用，被称为 <strong>编辑器之神</strong></li>
 </ul>
 
-<h4 id="toc_4">查询软连接命令（知道）</h4>
+<h4 id="toc_5">查询软连接命令（知道）</h4>
 
 <ul>
 <li>在很多 <code>Linux</code> 发行版中直接把 <code>vi</code> 做成 <code>vim</code> 的软连接</li>
@@ -190,7 +192,7 @@ $ ls -l /etc/alternatives/vim
 $ ls -l /usr/bin/vim.basic
 </code></pre>
 
-<h2 id="toc_5">02. 打开和新建文件</h2>
+<h2 id="toc_6">02. 打开和新建文件</h2>
 
 <ul>
 <li>在终端中输入 <code>vi</code> <strong>在后面跟上文件名</strong> 即可</li>
@@ -204,7 +206,7 @@ $ ls -l /usr/bin/vim.basic
 <li>如果文件不存在，会新建一个文件</li>
 </ul>
 
-<h3 id="toc_6">2.1 打开文件并且定位行</h3>
+<h3 id="toc_7">2.1 打开文件并且定位行</h3>
 
 <ul>
 <li>在日常工作中，有可能会遇到 <strong>打开一个文件，并定位到指定行</strong> 的情况</li>
@@ -219,14 +221,14 @@ $ ls -l /usr/bin/vim.basic
 <p>提示：如果只带上 <code>+</code> 而不指定行号，会直接定位到文件末尾</p>
 </blockquote>
 
-<h3 id="toc_7">2.2 异常处理</h3>
+<h3 id="toc_8">2.2 异常处理</h3>
 
 <ul>
 <li>如果 <code>vi</code> 异常退出，在磁盘上可能会保存有 <strong>交换文件</strong></li>
 <li>下次再使用 <code>vi</code> 编辑该文件时，会看到以下屏幕信息，按下字母 <code>d</code> 可以 <strong>删除交换文件</strong> 即可</li>
 </ul>
 
-<h2 id="toc_8">03. 三种工作模式</h2>
+<h2 id="toc_9">03. 三种工作模式</h2>
 
 <ul>
 <li><p><code>vi</code> 有三种基本工作模式：</p>
@@ -250,7 +252,7 @@ $ ls -l /usr/bin/vim.basic
 <p>提示：在 <code>Touch Bar</code> 的 Mac 电脑上 ，按 <code>ESC</code> 不方便，可以使用 <code>CTRL + [</code> 替代</p>
 </blockquote>
 
-<h3 id="toc_9">末行模式命令</h3>
+<h3 id="toc_10">末行模式命令</h3>
 
 <table>
 <thead>
@@ -290,9 +292,9 @@ $ ls -l /usr/bin/vim.basic
 </tbody>
 </table>
 
-<h2 id="toc_10">04. 常用命令</h2>
+<h2 id="toc_11">04. 常用命令</h2>
 
-<h3 id="toc_11">命令线路图</h3>
+<h3 id="toc_12">命令线路图</h3>
 
 <ol>
 <li>重复次数
@@ -313,21 +315,21 @@ $ ls -l /usr/bin/vim.basic
 <li>编辑</li>
 </ol>
 
-<h4 id="toc_12">学习提示</h4>
+<h4 id="toc_13">学习提示</h4>
 
 <ol>
 <li><code>vi</code> 的命令较多，<strong>不要期望一下子全部记住</strong>，个别命令忘记了，只是会影响编辑速度而已</li>
 <li>在使用 <code>vi</code> 命令时，注意 <strong>关闭中文输入法</strong></li>
 </ol>
 
-<h3 id="toc_13">4.1 移动（基本）</h3>
+<h3 id="toc_14">4.1 移动（基本）</h3>
 
 <ul>
 <li>要熟练使用 <code>vi</code>，首先应该学会怎么在 <strong>命令模式</strong> 下样快速移动光标</li>
 <li><strong>编辑操作命令</strong>，能够和 <strong>移动命令</strong> 结合在一起使用</li>
 </ul>
 
-<h4 id="toc_14">1) 上、下、左、右</h4>
+<h4 id="toc_15">1) 上、下、左、右</h4>
 
 <table>
 <thead>
@@ -362,7 +364,7 @@ $ ls -l /usr/bin/vim.basic
 </tbody>
 </table>
 
-<h4 id="toc_15">2) 行内移动</h4>
+<h4 id="toc_16">2) 行内移动</h4>
 
 <table>
 <thead>
@@ -402,7 +404,7 @@ $ ls -l /usr/bin/vim.basic
 </tbody>
 </table>
 
-<h4 id="toc_16">3) 行数移动</h4>
+<h4 id="toc_17">3) 行数移动</h4>
 
 <table>
 <thead>
@@ -442,7 +444,7 @@ $ ls -l /usr/bin/vim.basic
 </tbody>
 </table>
 
-<h4 id="toc_17">4) 屏幕移动</h4>
+<h4 id="toc_18">4) 屏幕移动</h4>
 
 <table>
 <thead>
@@ -482,9 +484,9 @@ $ ls -l /usr/bin/vim.basic
 </tbody>
 </table>
 
-<h3 id="toc_18">4.2 移动（程序）</h3>
+<h3 id="toc_19">4.2 移动（程序）</h3>
 
-<h4 id="toc_19">1) 段落移动</h4>
+<h4 id="toc_20">1) 段落移动</h4>
 
 <ul>
 <li><code>vi</code> 中使用 空行 来区分段落</li>
@@ -511,7 +513,7 @@ $ ls -l /usr/bin/vim.basic
 </tbody>
 </table>
 
-<h4 id="toc_20">2) 括号切换</h4>
+<h4 id="toc_21">2) 括号切换</h4>
 
 <ul>
 <li>在程序世界中，<code>()</code>、<code>[]</code>、<code>{}</code> 使用频率很高，而且 <strong>都是成对出现的</strong></li>
@@ -533,7 +535,7 @@ $ ls -l /usr/bin/vim.basic
 </tbody>
 </table>
 
-<h4 id="toc_21">3) 标记</h4>
+<h4 id="toc_22">3) 标记</h4>
 
 <ul>
 <li>在开发时，某一块代码可能<strong>需要稍后处理</strong>，例如：编辑、查看</li>
@@ -566,7 +568,7 @@ $ ls -l /usr/bin/vim.basic
 </tbody>
 </table>
 
-<h3 id="toc_22">4.3 选中文本（可视模式）</h3>
+<h3 id="toc_23">4.3 选中文本（可视模式）</h3>
 
 <ul>
 <li>学习 <code>复制</code> 命令前，应该先学会 <strong>怎么样选中 要复制的代码</strong></li>
@@ -607,7 +609,7 @@ $ ls -l /usr/bin/vim.basic
 <li><strong>可视模式</strong>下，可以和 <strong>移动命令</strong> 连用，例如：<code>ggVG</code> 能够选中所有内容</li>
 </ul>
 
-<h3 id="toc_23">4.4 撤销和恢复撤销</h3>
+<h3 id="toc_24">4.4 撤销和恢复撤销</h3>
 
 <ul>
 <li>在学习编辑命令之前，先要知道怎样撤销之前一次 <strong>错误的</strong> 编辑动作！</li>
@@ -636,7 +638,7 @@ $ ls -l /usr/bin/vim.basic
 </tbody>
 </table>
 
-<h3 id="toc_24">4.5 删除文本</h3>
+<h3 id="toc_25">4.5 删除文本</h3>
 
 <table>
 <thead>
@@ -687,7 +689,7 @@ $ ls -l /usr/bin/vim.basic
 * d&#39;a       # 从光标所在行 删除到 标记a 之间的所有代码
 </code></pre>
 
-<h3 id="toc_25">4.6 复制、粘贴</h3>
+<h3 id="toc_26">4.6 复制、粘贴</h3>
 
 <ul>
 <li><code>vi</code> 中提供有一个 <strong>被复制文本的缓冲区</strong>
@@ -743,7 +745,7 @@ $ ls -l /usr/bin/vim.basic
 <li>可以在 <strong>编辑模式</strong> 下使用 <strong>鼠标右键粘贴</strong></li>
 </ul>
 
-<h3 id="toc_26">4.7 替换</h3>
+<h3 id="toc_27">4.7 替换</h3>
 
 <table>
 <thead>
@@ -776,7 +778,7 @@ $ ls -l /usr/bin/vim.basic
 <li><strong>替换命令</strong> 的作用就是不用进入 <strong>编辑模式</strong>，对文件进行 <strong>轻量级的修改</strong></li>
 </ul>
 
-<h3 id="toc_27">4.8 缩排和重复执行</h3>
+<h3 id="toc_28">4.8 缩排和重复执行</h3>
 
 <table>
 <thead>
@@ -820,9 +822,9 @@ $ ls -l /usr/bin/vim.basic
 </ul>
 </blockquote>
 
-<h3 id="toc_28">4.9 查找</h3>
+<h3 id="toc_29">4.9 查找</h3>
 
-<h4 id="toc_29">常规查找</h4>
+<h4 id="toc_30">常规查找</h4>
 
 <table>
 <thead>
@@ -849,7 +851,7 @@ $ ls -l /usr/bin/vim.basic
 <li>如果不想看到高亮显示，可以随便查找一个文件中不存在的内容即可</li>
 </ul>
 
-<h4 id="toc_30">单词快速匹配</h4>
+<h4 id="toc_31">单词快速匹配</h4>
 
 <table>
 <thead>
@@ -875,7 +877,7 @@ $ ls -l /usr/bin/vim.basic
 <li>在开发中，通过单词快速匹配，可以快速看到这个单词在其他什么位置使用过</li>
 </ul>
 
-<h3 id="toc_31">4.10 查找并替换</h3>
+<h3 id="toc_32">4.10 查找并替换</h3>
 
 <ul>
 <li>在 <code>vi</code> 中查找和替换命令需要在 <strong>末行模式</strong> 下执行</li>
@@ -885,7 +887,7 @@ $ ls -l /usr/bin/vim.basic
 <pre><code class="language-text">:%s///g
 </code></pre>
 
-<h4 id="toc_32">1) 全局替换</h4>
+<h4 id="toc_33">1) 全局替换</h4>
 
 <ul>
 <li><strong>一次性</strong>替换文件中的 <strong>所有出现的旧文本</strong></li>
@@ -895,7 +897,7 @@ $ ls -l /usr/bin/vim.basic
 <pre><code class="language-text">:%s/旧文本/新文本/g
 </code></pre>
 
-<h4 id="toc_33">2) 可视区域替换</h4>
+<h4 id="toc_34">2) 可视区域替换</h4>
 
 <ul>
 <li><strong>先选中</strong> 要替换文字的 <strong>范围</strong></li>
@@ -905,7 +907,7 @@ $ ls -l /usr/bin/vim.basic
 <pre><code class="language-text">:s/旧文本/新文本/g
 </code></pre>
 
-<h4 id="toc_34">3) 确认替换</h4>
+<h4 id="toc_35">3) 确认替换</h4>
 
 <ul>
 <li>如果把末尾的 <code>g</code> 改成 <code>gc</code> 在替换的时候，会有提示！<strong>推荐使用！</strong></li>
@@ -924,7 +926,7 @@ $ ls -l /usr/bin/vim.basic
 <li><code>^Y</code> 向上滚屏</li>
 </ol>
 
-<h3 id="toc_35">4.11 插入命令</h3>
+<h3 id="toc_36">4.11 插入命令</h3>
 
 <ul>
 <li>在 <code>vi</code> 中除了常用的 <code>i</code> 进入 <strong>编辑模式</strong> 外，还提供了以下命令同样可以进入编辑模式：</li>
@@ -980,7 +982,7 @@ $ ls -l /usr/bin/vim.basic
 </tbody>
 </table>
 
-<h4 id="toc_36">演练 1 —— 编辑命令和数字连用</h4>
+<h4 id="toc_37">演练 1 —— 编辑命令和数字连用</h4>
 
 <ul>
 <li>在开发中，可能会遇到连续输入 <code>N</code> 个同样的字符</li>
@@ -1007,7 +1009,7 @@ $ ls -l /usr/bin/vim.basic
 <p>提示：正常开发时，在 <strong>进入编辑模式之前，不要按数字</strong></p>
 </blockquote>
 
-<h4 id="toc_37">演练 2 —— 利用 可视块 给多行代码增加注释</h4>
+<h4 id="toc_38">演练 2 —— 利用 可视块 给多行代码增加注释</h4>
 
 <ul>
 <li>在开发中，可能会遇到一次性给多行代码 <strong>增加注释</strong> 的情况</li>
@@ -1028,13 +1030,13 @@ $ ls -l /usr/bin/vim.basic
 <li>按下 <code>ESC</code> 返回到 <strong>命令模式</strong>，返回之后 <code>vi</code> 会在之前选中的每一行代码 <strong>前</strong> 插入 <code>#</code></li>
 </ol>
 
-<h2 id="toc_38">05. 分屏命令</h2>
+<h2 id="toc_39">05. 分屏命令</h2>
 
 <ul>
 <li>属于 <code>vi</code> 的高级命令 —— 可以 <strong>同时编辑和查看多个文件</strong></li>
 </ul>
 
-<h3 id="toc_39">5.1 末行命令扩展</h3>
+<h3 id="toc_40">5.1 末行命令扩展</h3>
 
 <p><strong>末行命令</strong> 主要是针对文件进行操作的：<strong>保存</strong>、<strong>退出</strong>、<strong>保存&amp;退出</strong>、<strong>搜索&amp;替换</strong>、<strong>另存</strong>、<strong>新建</strong>、<strong>浏览文件</strong></p>
 
@@ -1121,7 +1123,7 @@ $ ls -l /usr/bin/vim.basic
 <p>在实际开发中，可以使用 <code>w</code> 命令 <strong>阶段性的备份代码</strong></p>
 </blockquote>
 
-<h3 id="toc_40">5.2 分屏命令</h3>
+<h3 id="toc_41">5.2 分屏命令</h3>
 
 <ul>
 <li>使用 <strong>分屏命令</strong>，可以 <strong>同时编辑和查看多个文件</strong></li>
@@ -1150,7 +1152,7 @@ $ ls -l /usr/bin/vim.basic
 </tbody>
 </table>
 
-<h4 id="toc_41">1) 切换分屏窗口</h4>
+<h4 id="toc_42">1) 切换分屏窗口</h4>
 
 <blockquote>
 <p>分屏窗口都是基于 <code>CTRL + W</code> 这个快捷键的，<code>w</code> 对应的英文单词是 <code>window</code></p>
@@ -1194,7 +1196,7 @@ $ ls -l /usr/bin/vim.basic
 </tbody>
 </table>
 
-<h4 id="toc_42">2) 调整窗口大小</h4>
+<h4 id="toc_43">2) 调整窗口大小</h4>
 
 <blockquote>
 <p>分屏窗口都是基于 <code>CTRL + W</code> 这个快捷键的，<code>w</code> 对应的英文单词是 <code>window</code></p>
@@ -1242,9 +1244,9 @@ $ ls -l /usr/bin/vim.basic
 <p>调整窗口宽高的命令可以和数字连用，例如：<code>5 CTRL + W +</code> 连续 5 次增加高度</p>
 </blockquote>
 
-<h2 id="toc_43">06. 常用命令速查图</h2>
+<h2 id="toc_44">06. 常用命令速查图</h2>
 
-<h3 id="toc_44">vimrc</h3>
+<h3 id="toc_45">vimrc</h3>
 
 <ul>
 <li><code>vimrc</code> 是 <code>vim</code> 的配置文件，可以设置 vim 的配置，包括：<strong>热键</strong>、<strong>配色</strong>、<strong>语法高亮</strong>、<strong>插件</strong> 等</li>
@@ -1353,7 +1355,7 @@ $ ls -l /usr/bin/vim.basic
 	      
 		      
 			      <li class="post">
-			        <a href="15437629319226.html"># `vi` 编辑器之神（学习笔记）</a>
+			        <a href="15437629319226.html"></a>
 			      </li>
 		     
 		  
